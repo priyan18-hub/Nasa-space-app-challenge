@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Orrery Web App</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #labels {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-family: Arial, sans-serif;
+            z-index: 10;
+        }
+        .label {
+            margin: 5px;
+            font-size: 14px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="labels">
+        <div id="earthLabel" class="label">Earth</div>
+        <div id="neo1Label" class="label"> Asteriod 1</div>
+        <div id="neo2Label" class="label">Asteriod 2</div>
+        <div id="neo3Label" class="label">ASteriod 3</div>
+        <div id="moonLabel" class="label">Mars</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r128/examples/js/controls/OrbitControls.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
